@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Traitement des données dans MonBudget, application Windows à usage strictement personnel.">
+  <title>Confidentialité — MonBudget</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <header><a class="brand" href="index.html">MonBudget</a><span>Informations sur l’usage personnel</span></header>
+  <nav aria-label="Pages d’information"><a href="index.html" aria-current="page">Confidentialité</a><a href="conditions.html">Conditions d’utilisation</a></nav>
+  <main id="contenu">
+    <p class="eyebrow">Application Windows · version 0.4.0</p>
+    <h1>Politique de confidentialité</h1>
+    <p class="updated">Mise à jour : <time datetime="2026-10-24">24 octobre 2026</time></p>
+    <p class="intro">MonBudget est une application Windows gratuite, exploitée exclusivement à titre personnel, non commerciale et non distribuée à des tiers. Elle n’est pas un service bancaire commercial et sert uniquement à gérer les comptes et le budget de son utilisateur.</p>
+    <section><h2>Données et stockage</h2>
+      <p>Les comptes, soldes, opérations et informations budgétaires sont traités sur le PC. Le contenu financier du coffre et ses sauvegardes sont chiffrés ; certaines métadonnées techniques restent visibles. Les clés et sessions bancaires sont protégées séparément par Windows DPAPI. Les fichiers d’import d’origine et les exports CSV ne sont pas nécessairement chiffrés.</p>
+    </section>
+    <section><h2>Connexion bancaire facultative</h2>
+      <p>Après autorisation explicite, les échanges de données bancaires transitent par Enable Banking, qui traite les données nécessaires à la lecture des comptes autorisés et les transmet à MonBudget. Le coffre principal reste stocké localement sur le PC. L’authentification bancaire s’effectue dans le parcours officiel ; MonBudget ne collecte pas les mots de passe bancaires et ne déclenche aucun paiement. Le traitement réalisé par Enable Banking relève de sa <a href="https://tilisy.enablebanking.com/privacy">propre politique de confidentialité</a>.</p>
+    </section>
+    <section><h2>Assistant et absence de publicité</h2>
+      <p>Par défaut, les analyses sont locales, sans transmission à une IA distante. Une option Ollama locale peut recevoir, après accord pour chaque analyse, la question et des constats agrégés affichés à l’utilisateur. MonBudget ne comporte ni publicité ni commercialisation des données.</p>
+    </section>
+    <section><h2>Autorisations et conservation</h2>
+      <p>La déconnexion dans MonBudget demande la fermeture de la session auprès d’Enable Banking. En cas d’échec, le consentement doit être géré auprès de la banque ou d’Enable Banking. La révocation bancaire ne supprime pas les opérations déjà importées.</p>
+      <p>Les données du coffre restent conservées jusqu’à leur suppression par l’utilisateur, sans expiration automatique. Les sauvegardes et exports sont des copies indépendantes : supprimer une donnée du coffre ne supprime pas ces copies, qui doivent être gérées séparément.</p>
+    </section>
+    <section><h2>Pages publiques et limites</h2>
+      <p>Seules ces informations sont publiées sur GitHub Pages, sans formulaire, publicité ni outil de suivi ajouté. GitHub journalise notamment l’adresse IP des visiteurs pour la sécurité, selon sa <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">politique de confidentialité</a>. Ces pages n’accèdent pas au coffre. Le chiffrement ne garantit pas une sécurité absolue.</p>
+    </section>
+  </main>
+  <footer>MonBudget · Usage strictement personnel · <a href="conditions.html">Conditions d’utilisation</a></footer>
+</body>
+</html>
